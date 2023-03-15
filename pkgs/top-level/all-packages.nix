@@ -4936,6 +4936,8 @@ with pkgs;
     stdenv = gcc9Stdenv;
   };
 
+  gpufetch = callPackage ../tools/misc/gpufetch { };
+
   greg = callPackage ../applications/audio/greg {
     pythonPackages = python3Packages;
   };
